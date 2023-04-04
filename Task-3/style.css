@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Cookie', cursive;
+}
+.outer_box {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to top left, rgb(73, 199, 245), rgb(162, 225, 248));
+}
+
+.inner_box {
+    width: fit-content;
+    height: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 2%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px solid white;
+    background:linear-gradient(to top left,rgba(240, 253, 255, 0.557),#ffffffa5);
+    backdrop-filter: blur(7px);
+    z-index: 2;
+}
+.inner_box:hover{
+    box-shadow: 2px 2px 5px  rgba(79, 79, 228, 0.811);
+}
+
+h1 {
+    text-align: center;
+}
+.subcontainer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.col {
+    width: 100%;
+    max-width: 250px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    border-radius: 10px;
+    background-color: rgb(23, 180, 237);
+}
+
+.col select {
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: rgb(23, 180, 237);
+    text-align: center;
+    font-size: large;
+    font-weight: 900;
+    
+}
+
+.col input[type='number'] {
+    text-align: center;
+    font-size: large;
+    font-weight: 900;
+    margin: 5px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+
+}
+.equal{
+    text-align: center;
+    margin:auto 0;
+    font-size: larger;
+    font-weight: 900;
+}
+.button{
+    text-align: center;
+}
+.button #convert-btn {
+    margin:0 auto;
+    background-color: #2144e1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#convert-btn:hover {
+    background-color: #85c0eb;
+    color: rgb(13, 13, 240);
+   
+}
+
+.Ball1{
+    position: absolute;
+    top: 60px;
+    left: 260px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background:linear-gradient(to top right,rgb(8, 172, 242),rgb(243, 245, 247) );
+}
+.Ball2{
+    position: absolute;
+    bottom: 30px;
+    right: 260px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background:linear-gradient(to top right,rgb(8, 172, 242),rgb(243, 245, 247) );
+}
+@media only screen and (max-width:768px) {
+    body{
+        background-color: white;
+    }
+    .container{
+        padding: 20px;
+        width: 100%;
+        margin-top:30px;
+        box-shadow: none;
+        
+    }
+    .subcontainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+    }
+}
